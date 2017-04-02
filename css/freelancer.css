@@ -113,7 +113,7 @@ header {
     #mainNav .navbar-nav li.nav-item a.nav-link {
       color: white; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: #18BC9C;
+        color: #FFFFFF;
         outline: none; }
       #mainNav .navbar-nav li.nav-item a.nav-link:focus, #mainNav .navbar-nav li.nav-item a.nav-link:active {
         color: white; }
@@ -136,7 +136,7 @@ header {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding: 25px 0;
+    padding: 0 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s; }
@@ -146,7 +146,7 @@ header {
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
   #mainNav.navbar-shrink {
-    padding: 10px 0; }
+    padding: 0 0; }
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
 
@@ -444,3 +444,24 @@ footer {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none; }
+
+.navbar-collapse>ul>li>.dropdown-menu{
+
+}
+.nav-item.custom-dropdown{
+  text-align: center;
+  width: 160px;
+}
+
+.nav-item.dropdown-2:hover{
+  color: #FFFFFF !important;
+  background-color: #E37222;
+}
+
+.dropdown-2:active{
+  color: #FFFFFF;
+}
+
+.navbar-collapse>ul>li>.dropdown-menu>.>span{
+  width: 162px;
+}

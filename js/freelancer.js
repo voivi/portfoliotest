@@ -19,9 +19,14 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse>ul>li>a').click(function() {
-        $('.navbar-collapse').collapse('hide');
-    });
+    // $('.navbar-collapse>ul>li>a.linkable').click(function() {
+    //     $('.navbar-collapse').collapse('hide');
+    // });
+    //
+    // $('.nav-item.custom-dropdown.dropdown-2').hover(function(){
+    //
+    //
+    // });
 
     // jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
