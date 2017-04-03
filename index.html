@@ -45,13 +45,26 @@
         </button>
         <div class="container">
             <a class="navbar-brand page-scroll" href="#page-top">Vivian Huang</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto"><li class="nav-item dropdown custom-dropdown dropdown-1">
-                      <a class="nav-link page-scroll" data-toggle="dropdown" aria-haspopup="true">portfolio</a>
-                      <ul class="dropdown-menu"><li class="nav-link page-scroll linkable"><span><a href="#">WEBSITE</a></span></li><li class="nav-link page-scroll linkable"><span><a href="#">GRAPHIC & PHOTO</a></span></li><li class="nav-link page-scroll linkable"><span><a href="#">VIDEO</a></span></li>
-                      </ul></li><li class="nav-item dropdown custom-dropdown dropdown-2">
-                        <a class="nav-link page-scroll linkable" href="#about">About</a></li><li class="nav-item dropdown custom-dropdown dropdown-3">
-                        <a class="nav-link page-scroll linkable" href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-1 mouseoverToggle">
+                      <a class="nav-link page-scroll " aria-haspopup="true">portfolio</a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-link page-scroll mouseoveron linkable item-1 "><span><a href="#">Website</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-2"><span><a href="#">Graphic</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-3"><span><a href="#">Video</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-4"><span><a
+                        href="#">Photo</a></span></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-2">
+                      <a class="nav-link page-scroll linkable" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-3">
+                      <a class="nav-link page-scroll linkable" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -62,9 +75,9 @@
         <div class="container">
             <img class="img-fluid" src="img/profile.png" alt="">
             <div class="intro-text">
-                <span class="name">Start Bootstrap</span>
+                <span class="name">Hello, my name is Vivian Huang</span>
                 <hr class="star-light">
-                <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                <span class="skills">web & graphic design | photography & video</span>
             </div>
         </div>
     </header>
@@ -72,8 +85,7 @@
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
-            <h2 class="text-center">Portfolio</h2>
-            <hr class="star-primary">
+
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -82,7 +94,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-fluid" alt="">
+                        <img src="img/portfolio/cake.png" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -105,36 +117,7 @@
                         <img src="img/portfolio/circus.png" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-fluid" alt="">
-                    </a>
-                </div>
+
             </div>
         </div>
     </section>
