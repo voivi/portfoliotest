@@ -19,14 +19,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
     .navbar-toggler {
         z-index: 1;
     }
-    
+
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -39,23 +39,32 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
+    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light navbar-shrink">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
         <div class="container">
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            <a class="navbar-brand page-scroll" href="#page-top">Vivian Huang</a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-1 mouseoverToggle">
+                      <a class="nav-link page-scroll " aria-haspopup="true">Portfolio</a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-link page-scroll mouseoveron linkable item-1 "><span><a href="#">Website</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-2"><span><a href="#">Graphic</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-3"><span><a href="#">Video</a></span></li>
+                        <li class="nav-link page-scroll mouseoveron linkable item-4"><span><a
+                        href="#">Photo</a></span></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-2">
+                      <a class="nav-link page-scroll linkable" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item dropdown custom-dropdown dropdown-3">
+                      <a class="nav-link page-scroll linkable" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -64,20 +73,19 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <img class="img-fluid" src="img/profile.png" alt="">
+            <img class="img-fluid img-glass" src="img/profile.png" alt="">
             <div class="intro-text">
-                <span class="name">Start Bootstrap</span>
+                <span class="name">Hello, my name is Vivian Huang</span>
                 <hr class="star-light">
-                <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                <span class="skills">web & graphic design | photography & video</span>
             </div>
         </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="website">
         <div class="container">
-            <h2 class="text-center">Portfolio</h2>
-            <hr class="star-primary">
+          <h2 class="text-center section-text"><img src="img/line.png" class="img-fluid img-line" alt="">Website<img src="img/line.png" class="img-fluid img-line" alt=""></h2>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -86,7 +94,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-fluid" alt="">
+                        <img src="img/website/maplefruitmockup_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -96,7 +104,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-fluid" alt="">
+                        <img src="img/website/scbbm_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -106,39 +114,154 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-fluid" alt="">
+                        <img src="img/website/jealousy_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="graphic">
+        <div class="container">
+          <h2 class="text-center section-text"><img src="img/line.png" class="img-fluid img-line" alt="">Graphic<img src="img/line.png" class="img-fluid img-line" alt=""></h2>
+            <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-fluid" alt="">
+                        <img src="img/graphic/jealousy_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-fluid" alt="">
+                        <img src="img/graphic/parade2_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-fluid" alt="">
+                        <img src="img/graphic/logo_tb.png" class="img-fluid" alt="">
                     </a>
                 </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/graphic/gendai_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/graphic/transcend_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/graphic/school_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="photo">
+        <div class="container">
+          <h2 class="text-center section-text"><img src="img/line.png" class="img-fluid img-line" alt="">Photo<img src="img/line.png" class="img-fluid img-line" alt=""></h2>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/maplefruitmockup_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/scbbm_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/jealousy_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+          <h2 class="text-center section-text"><img src="img/line.png" class="img-fluid img-line" alt="">Video<img src="img/line.png" class="img-fluid img-line" alt=""></h2>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/maplefruitmockup_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/scbbm_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/website/jealousy_tb.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -521,7 +644,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
 
 </body>
 
