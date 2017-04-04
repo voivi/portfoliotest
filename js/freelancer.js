@@ -7,11 +7,11 @@
     $(document).on('click', 'a.page-scroll', function(event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        scrollTop: ($($anchor.attr('href')).offset().top - 40)
       }, 1250, 'easeInOutExpo');
       event.preventDefault();
     });
-    
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '#mainNav',
