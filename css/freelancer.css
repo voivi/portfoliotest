@@ -148,7 +148,7 @@ header {
       font-size: 1.5em; } }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
   section h2 {
     margin: 0;
     font-size: 3em; }
@@ -444,17 +444,17 @@ footer {
 
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #2B2B2B;
+  border-color: #2B2B2B;
   font-weight: 700; }
   .btn-success:focus, .btn-success.focus {
     color: white;
-    background-color: #128f76;
+    background-color: #efefef;
     border-color: #0a4b3e; }
   .btn-success:hover {
-    color: white;
-    background-color: #128f76;
-    border-color: #11866f; }
+    color: #2B2B2B;
+    background-color: #efefef;
+    border-color: #efefef; }
   .btn-success:active, .btn-success.active,
   .open > .btn-success.dropdown-toggle {
     color: white;
