@@ -5,9 +5,12 @@
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
+      var marginVal = ($(window).width() > 991)?  43 : 185;
+      console.log(marginVal);
+      console.log($(window).width());
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top - 40)
+        scrollTop: ($($anchor.attr('href')).offset().top - marginVal)
       }, 1250, 'easeInOutExpo');
       event.preventDefault();
     });
@@ -20,10 +23,10 @@
 
     $('.mouseoverToggle')
     .on('mouseover', function(){
-        $('.dropdown-menu').show();                //$(this.nextElementSibling).css('display: block;');
+        $('.dropdown-menu').css('display','block');                //$(this.nextElementSibling).css('display: block;');
     })
     .on('mouseleave', function(){
-        $('.dropdown-menu').hide();
+        $('.dropdown-menu').css('display','none');
     });
 
 
