@@ -23,10 +23,10 @@
 
     $('.mouseoverToggle')
     .on('mouseover', function(){
-        $('.dropdown-menu').css('display','block');                //$(this.nextElementSibling).css('display: block;');
+        $('.nonStatic-dropdown-menu').css('display','block');                //$(this.nextElementSibling).css('display: block;');
     })
     .on('mouseleave', function(){
-        $('.dropdown-menu').css('display','none');
+        $('.nonStatic-dropdown-menu').css('display','none');
     });
 
 

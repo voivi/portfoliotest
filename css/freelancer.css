@@ -103,7 +103,7 @@ header {
   #mainNav a:focus {
     outline: none; }
   #mainNav .navbar-brand {
-    color: white; }
+    height: 38px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active, #mainNav .navbar-brand.active {
       color: #de1b1b; }
   #mainNav .navbar-nav {
@@ -386,7 +386,7 @@ footer {
     margin-bottom: 30px; }
   footer .footer-above {
     padding-top: 30px;
-    background-color: #2B2B2B; 
+    background-color: #2B2B2B;
 	height: 150px;}
  /* footer .footer-col {
     margin-bottom: 50px; }*/
@@ -661,7 +661,6 @@ width: 256px;
 }
 
 #mainNav .navbar-nav {
-  position:relative;
   text-align: center;
   margin: 0 auto;
 }
@@ -684,5 +683,28 @@ width: 256px;
 }
 
 ul.nonStatic-dropdown-menu {
-  position: absolute !important;
+  /*position: absolute !important;*/
+  float: left;
+}
+
+/*
+@media (max-width: 991px) {
+    .nonStatic-dropdown-menu {
+      display: block
+    }
+}*/
+@media (min-width: 396px){
+  .fake-border {
+    display: none;
+  }
+}
+
+@media (max-width: 396px) {
+  .img-line {
+    display: none;
+  };
+  .fake-border {
+    display: block;
+  }
+
 }
